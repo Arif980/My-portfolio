@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/1e8bda6841.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello..</p>
+                <h1>I'm <span>Arif</span></h1> <br>
+                <p>I'm Software Engineer</p>
+            </div>
+        </div>
+    </div>
+    <!------------------------------about----------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./about copy.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a full stack developer with a strong foundation in creating dynamic and visually appealing web applications. I
+                        thrive on turning ideas into interactive and user-friendly experiences. My expertise lies in utilizing modern web technologies to
+                        build responsive, performant, and accessible websites.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Designer</span><br> Skilled in creating visually appealing and user-friendly website designs tailored to client needs.
+                            </li>
+                            <li><span>Wordpress</span><br>Proficient in developing custom websites using WordPress, with expertise in theme customization and plugin integration.
+                            </li>
+                            <li><span>Mern stack Developer</span><br>Building dynamic and interactive websites using the MERN (MongoDB, Express.js, React.js, Node.js) stack, ensuring high performance and scalability.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Web Development </li>
+                            <li><span>2023 - Current</span><br>Web Development Internship at digital Bhem & TCS</li>
+                            <li><span>2022</span><br>C++ Learning phase.</li>
+                            <li><span>2022-2023</span><br> Structured Query Language</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023- Current</span><br>I am Pursuing b.tech in Information Technology from Miet Meerut</li>
+                            <li><span>2023</span><br>Frontend Development & backend Development</li>
+                            <li><span>2023</span><br>DBMS, OS, CN</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------Services--------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting captivating online experiences tailored to your brand's identity and 
+                        objectives is our specialty. Our seasoned team of designers blends creativity
+                         with functionality to produce visually stunning websites that leave a lasting 
+                         impression on your visitors. From concept to execution, we meticulously plan and
+                          execute every detail to ensure your website stands out in the digital landscape.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Mern stack Development</h2>
+                    <p>power of modern web development with our MERN stack expertise.
+                         Harnessing the synergy of MongoDB, Express.js, React.js, and Node.js,
+                          we build dynamic and scalable web applications that meet the demands of  
+                          today's tech-savvy users. Whether you need a sleek single-page application or 
+                          a robust enterprise solution, our proficient developers have got you covered 
+                          every step of the way. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Wordpress</h2>
+                    <p>Empower your online presence with the flexibility and simplicity of WordPress.
+                         Our adept team leverages this renowned content management system to create websites
+                          and blogs that are not only visually stunning but also easy to manage and update.
+                           With a plethora of themes, plugins, and customization options at our disposal,
+                            we transform your vision into a captivating digital reality.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------portfolio------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./setflix.png">
+                    <div class="layer">
+                        <h3>Netflix WebApp</h3>
+                        <p>Watch Netflix movies & TV shows online or stream right to your smart TV, 
+                            game console, PC, Mac, mobile, tablet and more.Some very well-known web applications are Facebook, 
+                            Google, Amazon, and Netflix
+                        </p>
+                        <a href="https://classy-bublanina-98688d.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Quiz.png">
+                    <div class="layer">
+                        <h3>Quiz webapp</h3>
+                        <p>Quiz Application" is a collection of number of different types of quizzes like technical, games etc. 
+                            A user can access/play all of the quiz and can attempt any of the one.
+                             There will be limited number of questions and for each correct answer user will get a credit score.
+                        </p>
+                        <a href="https://stellar-crumble-740cda.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./To do list.png">
+                    <div class="layer">
+                        <h3>TO do list WebApp</h3>
+                        <p>Todoist is the world's favorite task manager and to-do list app. Finally become focused, organized and calm.
+                            Todoist is a powerful task management tool that helps individuals and teams organize their tasks, set deadlines,
+                             and prioritize work efficiently.
+                        </p>
+                        <a href="https://todolist1-weld.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------------Contact------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> arifchoudhary2024@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 7456022248</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/ARIF03656557?t=5e5bTotQfx68t6presLVBQ&s=09"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/sufiyanchoudhary_1/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/arif-choudhary-75a97a223/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/my portfolio/ARIF RESUME3.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>Copyright Portfolio <i class="fa-solid fa-heart"></i>Made by
+                Arif</p>
+        </div>
+    </div>
+
+
+<!------------------Script----------------------------->
+
+    <script>
+
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<!--------------------Goofle form link upload script------------------------------------------>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwAdm4jgLK2yxt5Lmoz2yaDg9rRXwqOrXXlw8UdPv-GChF_c-8HmGXam35O2mYhU2Y7/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
